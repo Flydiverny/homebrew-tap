@@ -1,9 +1,11 @@
 class YarnRun < Formula
   desc "fuzzy find enabled yarn run"
   homepage "https://github.com/flydiverny/yarn-run"
-  url "https://github.com/Flydiverny/yarn-run/archive/0.1.1.tar.gz"
-  version "0.1.1"
-  sha256 "a86db84383cb1762fd6ee36ade9a5debd01a36b3bfe0bd6097d2a80980d97b74"
+  url "https://github.com/Flydiverny/yarn-run/archive/0.2.0.tar.gz"
+  version "0.2.0"
+  sha256 "98c5017be3c7b23db793eee897326d26c01e0d4244b67abcb404b5dee2ac3755"
+
+  depends_on 'fzf'
 
   def install
     bin.install "yarn-run"
